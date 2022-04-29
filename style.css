@@ -1,7 +1,10 @@
-body {
-    background: #000;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
-h2 {
-    color: #fff;
-    text-align: center;
+
+body{
+    background-image: url(img/headerbg.jpg);
+    background-size: cover;
 }
