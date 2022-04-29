@@ -4,11 +4,15 @@
     border: 0;
 }
 
-body{
-    background-image: url(img/headerbg.jpg);
-    background-size: cover;
+.top {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
 }
-#header{
-    color: #fff;
-    margin-top: 20%;
+
+#header {
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
