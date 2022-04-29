@@ -8,3 +8,7 @@ body{
     background-image: url(img/headerbg.jpg);
     background-size: cover;
 }
+#header{
+    color: #fff;
+    margin-top: 20%;
+}
