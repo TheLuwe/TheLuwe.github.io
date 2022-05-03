@@ -3,11 +3,16 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
+    ev.dataTransfer.setData("text", ev.target.dataset.drag);
+    ev.dataTransfer.setData("elementId", ev.target.id);
 }
 
 function drop(ev) {
-    ev.preventDefault();
+    const elementId = ev.dataTransfer.getData("elementId");
     var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+    if (!data.includes(ev.target.id)) {
+        return false;
+    }
+    ev.preventDefault();
+    ev.target.appendChild(document.getElementById(elementId));
 }

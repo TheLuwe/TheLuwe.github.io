@@ -12,8 +12,8 @@
 }
 
 .sütun{
-  margin-bottom: 10px;
-  border: 3px solid black;
+  margin-bottom: 50px;
+  border: 0px solid black;
 }
 
 .a{
@@ -25,7 +25,7 @@
   margin-left: 10px;
   padding: 10px;
   width: 250px;
-  height: 100px;
+  height: 200px;
   border: 3px solid black;
 }
 
@@ -34,19 +34,10 @@
   margin-left: 710px;
   padding: 10px;
   width: 250px;
-  height: 100px;
+  height: 200px;
   border: 3px solid black;
 }
 
 .col-md-4{
   border: 3px solid black;
-}
-
-#div1, #div2 ,#div3,#div4,#div5,#div6,#div7,#div8,#div9 {
-  float: left;
-  width: 100px;
-  height: 35px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
 }
