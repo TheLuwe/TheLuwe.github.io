@@ -44,8 +44,7 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/motherboard.png" draggable="true" ondragstart="drag(event)" id="drag1"
-                                data-drag="div1,gpu">
+                            <img class="w" src="img/motherboard.png" draggable="true" ondragstart="drag(event)" id="drag1" data-drag="div1,mother">
                         </div>
                     </div>
                     <div class="col">
@@ -69,19 +68,19 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/cpu.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/cpu.png" draggable="true" ondragstart="drag(event)" id="drag2" data-drag="div2,cpu">
                         </div>
                     </div>
                     <div class="col">
                         <div class="div-c">
-            
+                            <span>The card where parts such as cpu, gpu and ram are installed</span>
                         </div>
                     </div>
                     <div class="col">
                         <table>
                             <tr>
                                 <td>
-                                    <div class="div-r" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="div-r" id="mother" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </td>
                             </tr>
                         </table>
@@ -92,12 +91,12 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/gpu.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/gpu.png" draggable="true" ondragstart="drag(event)" id="drag3" data-drag="div3,gpu">
                         </div>
                     </div>
                     <div class="col">
                         <div class="div-c">
-            
+                            <span>Computer storage unit</span>
                         </div>
                     </div>
                     <div class="col">
@@ -105,7 +104,7 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <div class="div-r" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="div-r" id="ssd" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </td>
                             </tr>
                         </table>
@@ -116,7 +115,7 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/ram.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/ram.png" draggable="true" ondragstart="drag(event)" id="drag4" data-drag="div4,ram">
                         </div>
                     </div>
                     <div class="col">
@@ -140,12 +139,12 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/case.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/case.png" draggable="true" ondragstart="drag(event)" id="drag5" data-drag="div5,case">
                         </div>
                     </div>
                     <div class="col">
                         <div class="div-c">
-            
+                            <span>The brain of the computer</span>
                         </div>
                     </div>
                     <div class="col">
@@ -153,7 +152,7 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <div class="div-r" id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="div-r" id="cpu" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </td>
                             </tr>
                         </table>
@@ -163,7 +162,7 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/ssd.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/ssd.png" draggable="true" ondragstart="drag(event)" id="drag6" data-drag="div6,ssd">
                         </div>
                     </div>
                     <div class="col">
@@ -190,7 +189,7 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/psu.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/psu.png" draggable="true" ondragstart="drag(event)" id="drag7">
                         </div>
                     </div>
                     <div class="col">
@@ -214,12 +213,12 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/monitor.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/monitor.png" draggable="true" ondragstart="drag(event)" id="drag8">
                         </div>
                     </div>
                     <div class="col">
                         <div class="div-c">
-            
+                            <span>Unit that transfers the image to the screen</span>
                         </div>
                     </div>
                     <div class="col">
@@ -227,7 +226,7 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <div class="div-r" id="div16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="div-r" id="gpu" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </td>
                             </tr>
                         </table>
@@ -238,12 +237,12 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/keyboard.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/keyboard.png" draggable="true" ondragstart="drag(event)" id="drag9">
                         </div>
                     </div>
                     <div class="col">
                         <div class="div-c">
-            
+                            <span>The part that protects the computer from external factors</span>
                         </div>
                     </div>
                     <div class="col">
@@ -251,7 +250,7 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <div class="div-r" id="div18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="div-r" id="case" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </td>
                             </tr>
                         </table>
@@ -262,12 +261,12 @@
                 <div class="row align-items-start">
                     <div class="col">
                         <div class="div-l" id="div10" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            <img class="w" src="img/mouse.png" draggable="true" ondragstart="drag(event)" id="drag11">
+                            <img class="w" src="img/mouse.png" draggable="true" ondragstart="drag(event)" id="drag10">
                         </div>
                     </div>
                     <div class="col">
                         <div class="div-c">
-            
+                            <span>computer temporary memory</span>
                         </div>
                     </div>
                     <div class="col">
@@ -275,7 +274,7 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <div class="div-r" id="div20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="div-r" id="ram" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </td>
                             </tr>
                         </table>
