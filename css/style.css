@@ -48,3 +48,25 @@ body{
   background-color: #f66b0e94;
   border-radius: 30px;
 }
+
+/* Footer Style Start */
+
+footer{
+  background-color: #141E27;
+  height: 55px;
+  margin-top: 35px;
+  padding-top: 15px;
+}
+
+.footer-p a{
+  color: #f66b0e;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-p a:hover{
+  color: #069A8E;
+
+}
+
+/* Footer Style End */
