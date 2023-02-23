@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: url(../image/6.png);
+}
+
+/** Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+#home #a{
+    background: #000000c0;
+    padding: 50px;
+    border: 1px solid rgb(65, 4, 179);
+}
+#home img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#home .name h2{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
