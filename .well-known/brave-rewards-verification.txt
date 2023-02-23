@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: eyytii.github.io
-Token: e2915413762d82c676d23ab3e0ffdfe47c88a1edade063b04bae0ded7678b254
