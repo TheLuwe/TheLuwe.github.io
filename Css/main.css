@@ -23,18 +23,10 @@ body{
     align-items: center;
     padding: 2rem;
 }
-#home #a{
-    background: #000000c0;
-    padding: 50px;
-    border: 1px solid rgb(65, 4, 179);
-}
-#home img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 100%;
-}
 
-#home .name h2{
-    color: #fff;
-    margin-bottom: 0.75rem;
+.spo{
+    width: 75%;
+    height: 500px;
+    margin-top: 2rem;
+    border-radius: 12px;
 }
