@@ -7,16 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="Self website">
     <meta name="discription" content="Self website">
-    <!-- * Fonts -->
+    <!--* Twitter Embed -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!--* Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- * Css -->
+
+    <!--* Css -->
     <link rel="stylesheet" href="Css/global.css">
     <link rel="stylesheet" href="Css/main.css">
+
     <!--* Responsive -->
     <link rel="stylesheet" media="(max-width:1260px)" href="Css/tablet.css">
     <link rel="stylesheet" media="(max-width:500px)" href="Css/mobile.css">
@@ -26,11 +31,15 @@
 <body>
     
     <section id="home">
+
+        <!--* Discord Embed -->
         <p>
             <a href="https://discord.com/users/622049091400105990">
                 <img class="lany" src="https://lanyard.cnrad.dev/api/622049091400105990?bg=292928" alt="Discord Presence">
             </a>
         </p>
+
+        <!--* Spotify Embed -->
         <div class="spo">
             <iframe class="s-1" src="https://open.spotify.com/embed/playlist/32dr1vnakjBmVxCnOQj9di?utm_source=generator"
                 frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -40,19 +49,18 @@
                 src="https://open.spotify.com/embed/playlist/1uttXbW1epTrQSu5TeA19x?utm_source=generator" frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
-            
-        <!-- <iframe class="dc" src="https://e.widgetbot.io/channels/1002988599739961374/1003295633161064500"></iframe> -->
-        <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-            new Crate({
-                server: '1002988599739961374', // CULT
-                channel: '1003295633161064500' // #💬・general
 
-            })
-        </script>
+        <!--* Twitter Embed -->
+        <div class="tw">
+            <a class="twitter-timeline" data-theme="dark" data-tweet-limit="2"
+                data-chrome="nofooter noscrollbar transparent" href="https://twitter.com/LuWe_exe?ref_src=twsrc%5Etfw">
+                Tweets by LuWe_exe</a>
+        </div>
 
+        <!--* Discord Server Button -->
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
 
-            const button2 = new Crate({
+            const button = new Crate({
                 server: '1002988599739961374',
                 channel: '1003295633161064500',
                 location: ['bottom', 'right'],
