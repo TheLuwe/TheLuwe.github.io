@@ -12,8 +12,7 @@ html{
 }
 
 body{
-    background: url(../image/6.png) no-repeat fixed center;
-    opacity: 0.9;
+    background: url(../image/bg-1.jpg) no-repeat fixed center;
 }
 
 /** Home */
@@ -23,13 +22,26 @@ body{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    background-color: #0000009d;
+    opacity: 0.9;
 }
 
 .spo{
-    width: 75%;
-    height: 500px;
+    width: 50%;
+    height: 650px;
     margin-top: 2rem;
-    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.s-1{
+    margin-right: 1rem;
+    align-self:auto;
+    width: 50%;
+}
+.s-2 {
+    margin-left: 1rem;
+    align-self: auto;
+    width: 50%;
 }
 
 .dc{
@@ -37,4 +49,5 @@ body{
     height: 500px;
     margin-top: 2rem;
     border-radius: 12px;
+    border: none;
 }
