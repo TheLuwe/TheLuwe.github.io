@@ -22,52 +22,80 @@
     <link rel="stylesheet" href="Css/global.css">
     <link rel="stylesheet" href="Css/main.css">
 
-    <!--* Responsive -->
-    <link rel="stylesheet" media="(max-width:1260px)" href="Css/tablet.css">
-    <link rel="stylesheet" media="(max-width:500px)" href="Css/mobile.css">
+    <!--* Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Luwe#0101</title>
 </head>
 
 <body>
-    
-    <section id="home">
-
-        <!--* Discord Embed -->
-        <p>
-            <a href="https://discord.com/users/622049091400105990">
-                <img class="lany" src="https://lanyard.cnrad.dev/api/622049091400105990?bg=292928" alt="Discord Presence">
-            </a>
-        </p>
-
-        <!--* Spotify Embed -->
-        <div class="spo">
-            <iframe class="s-1" src="https://open.spotify.com/embed/playlist/32dr1vnakjBmVxCnOQj9di?utm_source=generator"
-                frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
-            
-            <iframe class="s-2" style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/1uttXbW1epTrQSu5TeA19x?utm_source=generator" frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="container-md">
+        <!--* Discord Banner -->
+        <div class="dc row mt-5">
+        
+            <div class="col-md-4"></div>
+        
+            <div class="col-md-4">
+                <a href="https://discord.com/users/622049091400105990">
+                    <img class="lany-img" src="https://lanyard.cnrad.dev/api/622049091400105990?bg=292928" alt="Discord Presence">
+                </a>
+            </div>
+        
+            <div class="col-md-4"></div>
+        
         </div>
 
-        <!--* Twitter Embed -->
-        <div class="tw">
-            <a class="twitter-timeline" data-theme="dark" data-tweet-limit="2"
+
+        <!--* Spotify Banner -->
+        <div class="spo row mt-4 d-flex align-content-center">
+
+            <div class="col-md-6 d-flex justify-content-end">
+                <iframe class="s-1" src="https://open.spotify.com/embed/playlist/32dr1vnakjBmVxCnOQj9di?utm_source=generator"
+                    frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-start pe-3">
+                <iframe class="s-2" src="https://open.spotify.com/embed/playlist/1uttXbW1epTrQSu5TeA19x?utm_source=generator"
+                frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+
+        <!--* Twitter Banner -->
+        <div class="tw row mt-5">
+        
+            <div class="col-md-4"></div>
+        
+            <div class="col-md-4">
+                <a class="twitter-timeline" data-theme="dark" data-tweet-limit="2"
                 data-chrome="nofooter noscrollbar transparent" href="https://twitter.com/LuWe_exe?ref_src=twsrc%5Etfw">
                 Tweets by LuWe_exe</a>
+            </div>
+        
+            <div class="col-md-4"></div>
+        
         </div>
+    </div>
 
-        <!--* Discord Server Button -->
-        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
 
-            const button = new Crate({
-                server: '1002988599739961374',
-                channel: '1003295633161064500',
-                location: ['bottom', 'right'],
-                color: '#000'
-            })
-        </script>
-    </section>
+        const button = new Crate({
+            server: '1002988599739961374',
+            channel: '1003295633161064500',
+            location: ['bottom', 'right'],
+            color: '#000'
+        })
+    </script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html
