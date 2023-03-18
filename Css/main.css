@@ -2,21 +2,16 @@ body{
     background: url(../image/bg-1.jpg) no-repeat fixed center;
 }
 
-.spo, .dc{
-    opacity: 0.9;
+.spotify{
+    height: 400px;
 }
 
-.lany-img{
+.twitter{
     width: 100%;
-}
-.spo iframe{
-    width: 75%;
-    height: 650px;
+    height: 500px;
 }
 
-@media only screen and (max-width: 768px) {
-    .spo iframe {
-        width: 100%;
-        margin-top: 3rem;
-    }
+.twitter .twitter-timeline{
+    width: 500px;
+    height: 500px;
 }
