@@ -5,6 +5,17 @@ body{
 .spotify{
     height: 400px;
 }
+@media only screen and (max-width: 768px) {
+    .spotify {
+            height: 800px;
+    }
+    .spotify iframe {
+        height: 400px;
+        margin-top: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 .twitter{
     width: 100%;
