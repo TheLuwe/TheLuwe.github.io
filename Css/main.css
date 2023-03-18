@@ -1,5 +1,7 @@
 html{
-    background: url(../image/bg-2.jpg) no-repeat fixed center;
+    /* background: url(../image/bg-2.jpg) no-repeat fixed center; */
+    background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 40%, rgba(255, 0, 0, 1) 100%);
 }
 
 .spotify{
