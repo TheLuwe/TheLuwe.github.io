@@ -1,13 +1,13 @@
-fetch('config.json').then(function (response) { return response.json(); }).then(function (data) { var rolelist = ""; var badgelist = ""; for (var i = 0; i < data.roles.length; i++) { rolelist += '<div class="role"><div class="role-color" style="background:' + data.roles[i].color + '"></div><p>' + data.roles[i].rolename + '</p></div>'; }; for (var i = 0; i < data.badges.length; i++) { badgelist += '<div class="badge-item"><img src="' + data.badges[i].src + '" alt="" /><div class="tooltip tooltip-up">' + data.badges[i].tooltip + '</div></div>'; }; 
-document.getElementById('role-list').innerHTML = rolelist; 
-document.getElementById('badge-container').innerHTML = badgelist; 
-document.getElementById("discorduser.name").innerHTML = data.default_username + "<span>#" + data.default_tag + "</span>"; 
-document.getElementById("discorduser.aboutme").innerHTML = data.about_me; //! api den eklenmisa
-// document.getElementById("discorduser.banner").innerHTML = "<div class='banner-img' style='background: url(\"https://dcdn.dstn.to/banners/" + data.userid + "\")'></div>"; 
-// document.getElementById("discorduser.avatarlink").innerHTML = '<a href="https://discord.com/users/' + data.userid + '" target="_blank"><div id="discorduser.avatar" class="profil-logo"><img src="https://api.lanyard.rest/622049091400105990.jpg" /></div></a>'; 
-document.getElementById('guild').value = data.message_guild_id; 
-document.getElementById('avatar_url').value = data.message_source_icon; 
-document.getElementById('username').value = data.message_source_name; })
+// fetch('config.json').then(function (response) { return response.json(); }).then(function (data) { var rolelist = ""; var badgelist = ""; for (var i = 0; i < data.roles.length; i++) { rolelist += '<div class="role"><div class="role-color" style="background:' + data.roles[i].color + '"></div><p>' + data.roles[i].rolename + '</p></div>'; }; for (var i = 0; i < data.badges.length; i++) { badgelist += '<div class="badge-item"><img src="' + data.badges[i].src + '" alt="" /><div class="tooltip tooltip-up">' + data.badges[i].tooltip + '</div></div>'; }; 
+// document.getElementById('role-list').innerHTML = rolelist; 
+// document.getElementById('badge-container').innerHTML = badgelist; 
+// document.getElementById("discorduser.name").innerHTML = data.default_username + "<span>#" + data.default_tag + "</span>"; 
+// document.getElementById("discorduser.aboutme").innerHTML = data.about_me; //! api den eklenmisa
+// // document.getElementById("discorduser.banner").innerHTML = "<div class='banner-img' style='background: url(\"https://dcdn.dstn.to/banners/" + data.userid + "\")'></div>"; 
+// // document.getElementById("discorduser.avatarlink").innerHTML = '<a href="https://discord.com/users/' + data.userid + '" target="_blank"><div id="discorduser.avatar" class="profil-logo"><img src="https://api.lanyard.rest/622049091400105990.jpg" /></div></a>'; 
+// document.getElementById('guild').value = data.message_guild_id; 
+// document.getElementById('avatar_url').value = data.message_source_icon; 
+// document.getElementById('username').value = data.message_source_name; })
 const userID = "622049091400105990"; updatepresenceLoop(); lanyard({ userId: userID, socket: true, onPresenceUpdate: updateprofile })
 function updateprofile(data) {
   sessionStorage.setItem("activityData", JSON.stringify(data)); document.getElementById("discorduser.name").innerHTML = `${data.discord_user.username}<span>#${data.discord_user.discriminator}</span>`; if (data.active_on_discord_desktop) {

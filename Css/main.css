@@ -4,7 +4,15 @@ html{
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 40%, rgba(255, 0, 0, 1) 100%);
 }
 
-.spotify{
+iframe{
+    width:100%; 
+    max-width: 500px; 
+    height: 83vh; 
+    border: 0px; 
+    border-radius: 5px;
+}
+
+/* .spotify{
     height: 400px;
 }
 @media only screen and (max-width: 768px) {
@@ -27,4 +35,4 @@ html{
 .twitter .twitter-timeline{
     width: 500px;
     height: 500px;
-}
+} */
