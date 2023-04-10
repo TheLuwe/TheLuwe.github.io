@@ -10,6 +10,20 @@
 // document.getElementById('username').value = data.message_source_name; })
 const userID = "622049091400105990"; updatepresenceLoop(); lanyard({ userId: userID, socket: true, onPresenceUpdate: updateprofile })
 function updateprofile(data) {
+
+  let { balance, activedev, nitro, boost } = data.kv;
+  let badges = `<img class="badge-item" src='${balance}'> <img class="badge-item" src='${activedev}'> <img class="badge-item" src='${nitro}'> <img class="badge-item" src='${boost}'>`;
+  document.getElementById("badge-containor").innerHTML = badges;
+
+  // let { balance, activedev, nitro, boost } = data.kv;
+  // let badges = `<div class="badge-item"><img class="badge-item" src='${balance}'><img class="badge-item" src='${activedev}'><img class="badge-item" src='${nitro}'><img class="badge-item" src='${boost}'>
+  //   <div class="tooltip tooltip-up">${balance.tooltip}</div>
+  //   <div class="tooltip tooltip-up" title="Active Developer">${activedev.tooltip}</div>
+  //   <div class="tooltip tooltip-up">${nitro.tooltip}</div>
+  //   <div class="tooltip tooltip-up">${boost.tooltip}</div>
+  //   </div>`;
+  // document.getElementById("badge-containor").innerHTML = badges;
+
   sessionStorage.setItem("activityData", JSON.stringify(data)); document.getElementById("discorduser.name").innerHTML = `${data.discord_user.username}<span>#${data.discord_user.discriminator}</span>`; if (data.active_on_discord_desktop) {
     document.getElementById("discorduser.desktop").innerHTML = `<div class="status-item"><i style="color:` + (data.discord_status === `online` ? `#3ba55d` : (data.discord_status === `idle` ? `#faa81a` : `#ED4245`)) + `;" class="fa-solid fa-display"></i>
                 <div class="tooltip tooltip-up">`+ (data.discord_status === `online` ? `Online` : (data.discord_status === `idle` ? `Idle` : `DND`)) + ` on Desktop</div></div>`;
